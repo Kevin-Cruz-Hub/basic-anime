@@ -1,0 +1,100 @@
+html {
+	background-color: rgb(0, 119, 22);
+}
+section {
+	background-color: goldenrod;
+	margin: 20px;
+	padding: 50px;
+}
+a {
+	text-decoration: none;
+	color: green;
+	transition: 0.5s;
+}
+#navbar ul,
+nav-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+	margin-right: 2px;
+	background-color: black;
+	padding: 25px;
+}
+
+a:hover {
+	color: rgb(255, 50, 50);
+}
+
+div,
+button {
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+}
+#navbar header {
+	position: absolute;
+	top: 15px;
+	color: white;
+	padding: 0 15px;
+	background-color: rgb(0, 119, 22);
+}
+img{
+	height: 300px;
+	width: 400px;
+	object-fit: scale-down;
+	display: block;
+	border-radius: 10%;
+	border: 3px double black;
+	margin: 10px auto;
+	box-shadow: 0 0 15px 5px black;
+	transition: 0.5s;
+}
+img:hover{
+	background-color: rgb(245, 182, 66)
+}
+h2{
+	text-align: center;
+}
+code{
+	font-size: 20px;
+	font-weight: 800;
+	font-family: 'Tilt Prism', cursive;
+
+}
+@media (max-width: 500px) {
+	a {
+		color: green;
+	}
+	html {
+		background-color: rgb(0, 119, 22);
+	}
+}
+@media (min-width: 1000px) {
+	a {
+		color: goldenrod;
+	}
+	html {
+		background-color: goldenrod;
+	}
+	#navbar header {
+		background-color: goldenrod;
+	}
+	section {
+		border: 2px solid black;
+	}
+}
+@media (min-width: 1500px) {
+	a {
+		color: rgb(255, 50, 50);
+	}
+	a:hover {
+		color: rgb(150,0,150);
+	}
+	html {
+		background-color: rgb(255, 50, 50);
+	}
+	#navbar header {
+		background-color: rgb(255, 50, 50);
+	}
+}
